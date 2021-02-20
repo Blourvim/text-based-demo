@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-color: #eeeded;
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+  }
+  
+  /* image */
+  .image-panel {
+    margin: 0 auto;
+    padding: 3rem 20%;
+    display: none;
+  }
+  .image-panel img {
+    border-radius: 2rem;
+    width: 100%;
+    border: 2px solid #39486755;
+  }
+  
+  /* textarea */
+  .form {
+    width: 50%;
+    position: relative;
+    height: 4rem;
+    left: 25%;
+    right: 25%;
+  }
+  .form input {
+    background-color: #eeeded;
+    width: 100%;
+    height: 100%;
+    color: #394867;
+    padding-top: 1.75rem;
+    border: 2px solid #39486790;
+    border-style: none none solid none;
+  }
+  #text-field{
+  background-color:pink;
+  overflow-x: hidden;
+  max-width: 80%;
+  width: 40rem;
+  height: 20rem;
+  overflow-y: auto;
+  margin: auto;
+  list-style-type: none;
+  text-align: left;
+  padding-left: 8px;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  
+  }
+  #txt1{
+    background-color: #eeeded;
+    width: 35rem;
+    height: 100%;
+    color: #394867;
+    padding-top: 1rem;
+    border: 2px solid #39486790;
+    border-style: none none solid none;
+    font-size: 1.2rem;
+  }
+  /* navigator */
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #394867;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 0.25rem 0.25rem 0.25rem 0.25rem;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #eeeded70;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #eeeded;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  #main {
+    position: relative;
+    padding: 1rem;
+    transition: margin-left 0.5s;
+  }
+  .hamburger img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    margin: 1rem auto auto 1rem;
+    width: 3rem;
+    transform: rotate(-5deg);
+  }
+  /* hamburger animation */
+  @keyframes flip {
+    0% {
+      transform: rotate(-5deg);
+    }
+    50% {
+      transform: rotate(-20deg);
+    }
+    100% {
+      transform: rotate(-5deg);
+    }
+  }
+  .hamburger img:hover {
+    animation-name: flip;
+    animation-delay: 0;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  
+  /* responsive */
+  @media screen and (max-width: 1040px) {
+    .image-panel {
+      margin: 2rem auto 1.5rem;
+      padding: 0 5%;
+    }
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+    .sidenav a {
+      font-size: 18px;
+    }
+  }
+  
+  #clicker{
+  font-size: 2rem;
+  }
+  
+  #fuel-tank{
+  
+  height: 15rem;
+  width: 5rem;
+  background-color: red;
+  display: block;
+  margin-left: 20rem;
+  }
+  
+  #fuel{
+  display: block;
+  background-color: royalblue;
+  height: 100%;
+  width: 5rem;
+  
+  }
